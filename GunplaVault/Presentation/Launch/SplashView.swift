@@ -13,14 +13,14 @@ struct SplashView: View {
     @State private var showTagline = false
     @State private var animationDone = false
 
-    private let markSize: CGFloat = 128
+    private let logoSize: CGFloat = 128
 
     var body: some View {
         ZStack {
             GVColors.background.ignoresSafeArea()
 
             VStack(spacing: 20) {
-                BrandMarkView(stage: stage, size: markSize, assemblyProgress: assemblyProgress)
+                AppLogoView(stage: stage, assemblyProgress: assemblyProgress, size: logoSize)
 
                 VStack(spacing: 8) {
                     Text("GUNPLA VAULT")

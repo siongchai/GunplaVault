@@ -2,6 +2,8 @@ import SwiftUI
 
 /// Remote box art with a shipping-box placeholder while loading / on failure.
 struct BoxArtImage: View {
+    @EnvironmentObject private var themeManager: ThemeManager
+
     let urlString: String?
     var cornerRadius: CGFloat = 8
 
@@ -36,7 +38,7 @@ struct BoxArtImage: View {
         ZStack {
             GVColors.surfaceSecondary
             Image(systemName: "shippingbox.fill")
-                .foregroundStyle(GVColors.accent.opacity(0.5))
+                .foregroundStyle(themeManager.accentColor.opacity(0.5))
         }
     }
 }

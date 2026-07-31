@@ -6,7 +6,6 @@ struct ProfileView: View {
     @EnvironmentObject private var collectionStore: CollectionStore
     @EnvironmentObject private var subscriptionStore: SubscriptionStore
     @EnvironmentObject private var themeManager: ThemeManager
-
     @EnvironmentObject private var shelfStore: ShelfStore
 
     @State private var editingName = false
@@ -17,16 +16,12 @@ struct ProfileView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                    ScreenHeader(title: "Profile", subtitle: profileStore.profile?.email ?? "")
-
                     profileCard
                     statsRow
                     navigationLinks
                     achievementsCard
                     membershipCard
                     syncCard
-                    appearanceCard
-                    aboutSection
                     demoCard
                     signOutButton
                 }
@@ -34,7 +29,7 @@ struct ProfileView: View {
             }
             .background(GVColors.background)
             .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.large)
             .sheet(isPresented: $showPaywall) {
                 PaywallView().environmentObject(appState)
             }
@@ -54,24 +49,20 @@ struct ProfileView: View {
     private var profileCard: some View {
         GVCard {
             HStack(spacing: 16) {
-                Circle()
-                    .fill(GVColors.accent.opacity(0.2))
-                    .frame(width: 64, height: 64)
-                    .overlay {
-                        Image(systemName: "person.fill")
-                            .font(.title2)
-                            .foregroundStyle(GVColors.accent)
-                    }
+                ProfileAvatarView(
+                    name: profileStore.profile?.displayName ?? "Builder",
+                    size: 64
+                )
 
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 6) {
                     Text(profileStore.profile?.displayName ?? "Builder")
                         .font(GVTypography.headline)
                     GVCapsuleBadge(
                         text: profileStore.tier.displayName,
-                        tint: profileStore.tier == .pro ? GVColors.accent : GVColors.textSecondary
+                        tint: profileStore.tier == .pro ? themeManager.accentColor : GVColors.textSecondary
                     )
-                    if let since = profileStore.profile?.builderSince {
-                        Text("Builder since \(since.formatted(date: .abbreviated, time: .omitted))")
+                    if let email = profileStore.profile?.email {
+                        Text(email)
                             .font(GVTypography.caption)
                             .foregroundStyle(GVColors.textSecondary)
                     }
@@ -83,8 +74,8 @@ struct ProfileView: View {
                     nameDraft = profileStore.profile?.displayName ?? ""
                     editingName = true
                 }
-                .font(GVTypography.caption)
-                .foregroundStyle(GVColors.accent)
+                .font(GVTypography.caption.weight(.semibold))
+                .foregroundStyle(themeManager.accentColor)
             }
         }
     }
@@ -92,6 +83,12 @@ struct ProfileView: View {
     private var navigationLinks: some View {
         GVCard {
             VStack(spacing: 0) {
+                NavigationLink {
+                    ConfigurationView()
+                } label: {
+                    NavRow(title: "Configuration", icon: "gearshape.fill")
+                }
+                Divider()
                 NavigationLink {
                     AnalyticsView()
                         .environmentObject(appState)
@@ -140,7 +137,7 @@ struct ProfileView: View {
                 if profileStore.tier == .pro {
                     Label("Pro — unlimited kits & cloud sync", systemImage: "star.fill")
                         .font(GVTypography.callout)
-                        .foregroundStyle(GVColors.accent)
+                        .foregroundStyle(themeManager.accentColor)
                     Button("Restore Purchases") {
                         Task { await subscriptionStore.restorePurchases() }
                     }
@@ -151,8 +148,8 @@ struct ProfileView: View {
                         .font(GVTypography.callout)
                         .foregroundStyle(GVColors.textSecondary)
                     Button("Upgrade to Pro") { showPaywall = true }
-                        .font(GVTypography.callout)
-                        .foregroundStyle(GVColors.accent)
+                        .font(GVTypography.callout.weight(.semibold))
+                        .foregroundStyle(themeManager.accentColor)
                 }
             }
         }
@@ -184,36 +181,16 @@ struct ProfileView: View {
                         Button("Sync Now") {
                             Task { await collectionStore.syncNow() }
                         }
-                        .font(GVTypography.callout)
-                        .foregroundStyle(GVColors.accent)
+                        .font(GVTypography.callout.weight(.semibold))
+                        .foregroundStyle(themeManager.accentColor)
                     } else {
-                        Text("Add Secrets.plist and run supabase/collection_items.sql to enable cloud sync.")
-                            .font(GVTypography.callout)
+                        Text("Enable Cloud Sync in Configuration, or add Secrets.plist to connect Supabase.")
+                            .font(GVTypography.caption)
                             .foregroundStyle(GVColors.textSecondary)
                     }
                 }
             }
         }
-    }
-
-    private var appearanceCard: some View {
-        GVCard {
-            VStack(alignment: .leading, spacing: 16) {
-                Text("Appearance")
-                    .font(GVTypography.headline)
-                Picker("Theme", selection: $themeManager.theme) {
-                    ForEach(AppTheme.allCases) { theme in
-                        Text(theme.label).tag(theme)
-                    }
-                }
-                .pickerStyle(.segmented)
-                .accessibilityLabel("App theme")
-            }
-        }
-    }
-
-    private var aboutSection: some View {
-        AboutSection()
     }
 
     @ViewBuilder
@@ -236,10 +213,11 @@ struct ProfileView: View {
             Task { await appState.signOut() }
         } label: {
             Text("Sign Out")
+                .font(GVTypography.callout.weight(.semibold))
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 14)
         }
-        .background(GVColors.surface, in: RoundedRectangle(cornerRadius: 14))
+        .background(GVColors.surface, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
     }
 
     private func formatHours(_ hours: Double) -> String {
@@ -256,7 +234,8 @@ private struct StatBlock: View {
         GVCard {
             VStack(spacing: 4) {
                 Text(value)
-                    .font(GVTypography.title2)
+                    .font(GVTypography.metric)
+                    .foregroundStyle(GVColors.textPrimary)
                 Text(title)
                     .font(GVTypography.caption)
                     .foregroundStyle(GVColors.textSecondary)

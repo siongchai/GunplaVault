@@ -38,6 +38,11 @@ for entry in "${SIZES[@]}"; do
   echo "Wrote $filename (${pixels}px)"
 done
 
+APP_LOGO_OUT="$ROOT/GunplaVault/Resources/Assets.xcassets/AppLogo.imageset"
+mkdir -p "$APP_LOGO_OUT"
+cp "$OUT/Icon-1024.png" "$APP_LOGO_OUT/AppLogo.png"
+echo "Synced AppLogo.png for in-app branding"
+
 cat > "$OUT/Contents.json" <<'JSON'
 {
   "images": [

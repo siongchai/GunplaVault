@@ -69,7 +69,7 @@ final class CollectionStore: ObservableObject {
     }
 
     var isCloudSyncEnabled: Bool {
-        profileStore?.tier == .pro && syncService.isConfigured
+        profileStore?.tier == .pro && syncService.isConfigured && ThemeManager.isCloudSyncEnabled
     }
 
     func configure(userID: String) {
@@ -81,7 +81,7 @@ final class CollectionStore: ObservableObject {
         do {
             items = try repository.fetchAll(userID: userID)
 
-            if profileStore?.tier == .pro && syncService.isConfigured {
+            if profileStore?.tier == .pro && syncService.isConfigured && ThemeManager.isCloudSyncEnabled {
                 isSyncing = true
                 defer { isSyncing = false }
                 let merged = try await syncService.fullSync(userID: userID, localItems: items)

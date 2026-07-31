@@ -10,6 +10,7 @@
 		0046D065CF9EC19137B5DE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECB3C57BE71A648352C5365 /* Assets.xcassets */; };
 		054E235A6D1E3A52AA4F908E /* ShelfStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93D5409E13A2F26BC13DCB3 /* ShelfStore.swift */; };
 		06BFE29DE928FA141E19F597 /* LocalProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CFE53A8D9D229D7C60AD00 /* LocalProfileService.swift */; };
+		12D4F66F905DC2A65C6DCFA5 /* app-icon-master.png in Resources */ = {isa = PBXBuildFile; fileRef = 0288CED30C1D6D4AA9FA9D27 /* app-icon-master.png */; };
 		137918C033C239C6C02036A5 /* ManualKitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A558160393EB05B387146 /* ManualKitEntryView.swift */; };
 		1864BB4CA40BF69F2E582331 /* AchievementModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE1E5A1C93A219B747EC86 /* AchievementModels.swift */; };
 		1F34701018F5F701F99E9C78 /* AuthServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B18B42700711164C890D12 /* AuthServiceFactory.swift */; };
@@ -30,9 +31,11 @@
 		4D8E81646C8476FE9F019154 /* SupabaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA54A314A7953C9A18028F8 /* SupabaseAuthService.swift */; };
 		512A31600409A45084F51688 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762B542B960CAAFBA00D6F4 /* HomeView.swift */; };
 		512FB2B37A43401877A9C8AF /* SwiftDataCollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B8ABF3D2A8B3FB34850868 /* SwiftDataCollectionRepository.swift */; };
+		54047AE0FC6E6F45C033DC2A /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B30EF4489DB1EE997174BC9 /* ConfigurationView.swift */; };
 		569200FD7165837A62375086 /* SeedKitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414670E1CBDFDE547C5E2020 /* SeedKitLoader.swift */; };
 		61470F96867554DD4129F4D0 /* ProfileNavRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2865C238E531CD9C45F39D /* ProfileNavRow.swift */; };
 		6313B20DE02D29FC96FC8C32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0318CEBB2B3D7C5DBC895B /* ProfileView.swift */; };
+		63C4E1B8578F078C605BD69C /* AppLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49912B25BB822D6E7DB40B28 /* AppLogoView.swift */; };
 		646CD01CC5834E34A73BECF2 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE2F8D74408D11CB1556DA /* DesignSystem.swift */; };
 		659190B0D528C15B2EA4AD3B /* CollectionItemRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2135508080CC94879856D291 /* CollectionItemRecord.swift */; };
 		65B833AC6F415C01C2C5D5D3 /* SeedKitCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D990AE9478C6AC299A60E12 /* SeedKitCatalog.swift */; };
@@ -46,6 +49,7 @@
 		8453B26AE5C7CEFC23A8A142 /* ShelfModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCF4410017CAE33457E070 /* ShelfModels.swift */; };
 		88CF68AEAB22E074DB470905 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C18C93E1C9D8C03B07342 /* Models.swift */; };
 		8B8A6EA491036C7AD53426E4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E72067BDFD59298E28C362 /* SplashView.swift */; };
+		A43720AC7E137D6DDCB5C31D /* BoxArtImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA253D35BB67D0A5787E28 /* BoxArtImage.swift */; };
 		A50323CF107C7BFF92F6E362 /* AddKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63D220FE9AB8B2744F6353 /* AddKitView.swift */; };
 		AB365FCC599379541A9085C0 /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB016671DBCCAA359C507C /* CollectionItem.swift */; };
 		B1B7ED2598DC98E61793B4D2 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5822220E3DC28C3E1A95DE /* PersistenceController.swift */; };
@@ -72,6 +76,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0288CED30C1D6D4AA9FA9D27 /* app-icon-master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-master.png"; sourceTree = "<group>"; };
 		067E72E37569080F8EA13ACF /* GunplaVault.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GunplaVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0762B542B960CAAFBA00D6F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		08DF8D19165806CA3AF666AB /* seed_kits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seed_kits.json; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		37E4CED21B1732BB157569CF /* AnalyticsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModels.swift; sourceTree = "<group>"; };
 		414670E1CBDFDE547C5E2020 /* SeedKitLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedKitLoader.swift; sourceTree = "<group>"; };
 		4712D28C6F79AFF1C2021DD5 /* AchievementsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsSection.swift; sourceTree = "<group>"; };
+		49912B25BB822D6E7DB40B28 /* AppLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoView.swift; sourceTree = "<group>"; };
 		4FA54A314A7953C9A18028F8 /* SupabaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseAuthService.swift; sourceTree = "<group>"; };
 		5253F72EDB4C324B7144D464 /* GunplaVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunplaVaultApp.swift; sourceTree = "<group>"; };
 		5FCE1E5A1C93A219B747EC86 /* AchievementModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModels.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 		6D845BA8B5AB9787C8154811 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		79C5533E96FF0C37D8A1B40A /* ShelvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelvesView.swift; sourceTree = "<group>"; };
 		7A0318CEBB2B3D7C5DBC895B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7B30EF4489DB1EE997174BC9 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
 		7DDC0C39FA1EDB029E19DB93 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 		80DB3D462BC28311A958B99E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		8AFCF4410017CAE33457E070 /* ShelfModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModels.swift; sourceTree = "<group>"; };
@@ -113,6 +120,7 @@
 		A22A558160393EB05B387146 /* ManualKitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualKitEntryView.swift; sourceTree = "<group>"; };
 		A82C18C93E1C9D8C03B07342 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		A8AC5C551764BCD4B60C8879 /* VirtualShelfRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualShelfRecord.swift; sourceTree = "<group>"; };
+		AFCA253D35BB67D0A5787E28 /* BoxArtImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxArtImage.swift; sourceTree = "<group>"; };
 		B512C9CF0919E0F8293AE703 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		B833B56687E1D5B21CC24F96 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
 		BA1C412BCD428DC1F5F98B53 /* BuildModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildModels.swift; sourceTree = "<group>"; };
@@ -184,6 +192,14 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		280244712B7FF0A8AAE3F571 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				0288CED30C1D6D4AA9FA9D27 /* app-icon-master.png */,
+			);
+			path = Brand;
+			sourceTree = "<group>";
+		};
 		2CDFD40F6C05BF541A2446A0 /* Legal */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				4712D28C6F79AFF1C2021DD5 /* AchievementsSection.swift */,
+				7B30EF4489DB1EE997174BC9 /* ConfigurationView.swift */,
 				CB2865C238E531CD9C45F39D /* ProfileNavRow.swift */,
 				7A0318CEBB2B3D7C5DBC895B /* ProfileView.swift */,
 				79C5533E96FF0C37D8A1B40A /* ShelvesView.swift */,
@@ -296,6 +313,7 @@
 		6C77D3134E279020A4878511 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				280244712B7FF0A8AAE3F571 /* Brand */,
 				1D6F22867AEDEDBD1E62E544 /* Config */,
 				518D7365D26F6BDC13655C0A /* SeedData */,
 				4C28C0ED5CFAA1E7548A4820 /* StoreKit */,
@@ -392,6 +410,8 @@
 		B2B358E6848256BAFED7F468 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				49912B25BB822D6E7DB40B28 /* AppLogoView.swift */,
+				AFCA253D35BB67D0A5787E28 /* BoxArtImage.swift */,
 				A038253259451160D5C47241 /* BrandMarkView.swift */,
 				9EBE2F8D74408D11CB1556DA /* DesignSystem.swift */,
 			);
@@ -555,6 +575,7 @@
 			files = (
 				0046D065CF9EC19137B5DE52 /* Assets.xcassets in Resources */,
 				E65809CAAE94854B2465E0E2 /* Secrets.example.plist in Resources */,
+				12D4F66F905DC2A65C6DCFA5 /* app-icon-master.png in Resources */,
 				BC5C4B529C41F282D4339016 /* seed_kits.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,11 +592,13 @@
 				A50323CF107C7BFF92F6E362 /* AddKitView.swift in Sources */,
 				B67E1F4C8CC45EA1E1103A26 /* AnalyticsModels.swift in Sources */,
 				32D9739097EBF5A27A2CDB3B /* AnalyticsView.swift in Sources */,
+				63C4E1B8578F078C605BD69C /* AppLogoView.swift in Sources */,
 				2CE345AB7D8C293DD182B7BF /* AppState.swift in Sources */,
 				262CF8F44A90A0E1457C9D46 /* AuthFlowView.swift in Sources */,
 				ED5E05BA80297A3120DA7814 /* AuthService.swift in Sources */,
 				1F34701018F5F701F99E9C78 /* AuthServiceFactory.swift in Sources */,
 				DA3142016D4D4F663E6C3C69 /* AuthViews.swift in Sources */,
+				A43720AC7E137D6DDCB5C31D /* BoxArtImage.swift in Sources */,
 				78DEA802DEE2B11B1BCA088E /* BrandMarkView.swift in Sources */,
 				D07A23726BE9A78384DF7616 /* BuildModels.swift in Sources */,
 				C2114B521D9104932B429D58 /* BuildPhotoStorage.swift in Sources */,
@@ -589,6 +612,7 @@
 				B8C9E8DBF630115F07179F73 /* CollectionStore.swift in Sources */,
 				7F798CD35611477814086E9D /* CollectionSyncService.swift in Sources */,
 				781871DDFDE79BC85C2F8AAB /* CollectionView.swift in Sources */,
+				54047AE0FC6E6F45C033DC2A /* ConfigurationView.swift in Sources */,
 				646CD01CC5834E34A73BECF2 /* DesignSystem.swift in Sources */,
 				34C4051176DA1F69C6429519 /* ExploreComingSoonView.swift in Sources */,
 				80A78EA1A65BD531861944D8 /* GunplaVaultApp.swift in Sources */,

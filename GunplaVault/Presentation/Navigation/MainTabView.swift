@@ -38,7 +38,6 @@ struct MainTabView: View {
             HomeView()
                 .tabItem { Label(MainTab.home.title, systemImage: MainTab.home.icon) }
                 .tag(MainTab.home)
-                .accessibilityLabel("Home tab")
 
             CollectionView()
                 .tabItem { Label(MainTab.collection.title, systemImage: MainTab.collection.icon) }

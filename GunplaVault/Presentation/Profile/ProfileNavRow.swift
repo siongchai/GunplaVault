@@ -1,13 +1,15 @@
 import SwiftUI
 
 struct NavRow: View {
+    @EnvironmentObject private var themeManager: ThemeManager
+
     let title: String
     let icon: String
 
     var body: some View {
         HStack(spacing: 12) {
             Image(systemName: icon)
-                .foregroundStyle(GVColors.accent)
+                .foregroundStyle(themeManager.accentColor)
                 .frame(width: 24)
             Text(title)
                 .font(GVTypography.callout)

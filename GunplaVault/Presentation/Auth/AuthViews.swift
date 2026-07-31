@@ -9,7 +9,7 @@ struct WelcomeView: View {
                 Spacer(minLength: 40)
 
                 VStack(spacing: 12) {
-                    BrandMarkView(stage: .complete, size: 88)
+                    AppLogoView(stage: .complete, size: 88)
 
                     Text("GUNPLA VAULT")
                         .font(GVTypography.largeTitle)
@@ -23,7 +23,7 @@ struct WelcomeView: View {
                 .accessibilityElement(children: .combine)
                 .accessibilityLabel("Gunpla Vault. Build. Collect. Remember.")
 
-                VStack(spacing: 12) {
+                VStack(spacing: 10) {
                     FeatureRow(icon: "shippingbox.fill", title: "Your Collection", subtitle: "All your kits, organized beautifully")
                     FeatureRow(icon: "viewfinder", title: "AI Scanner", subtitle: "Smart recognition — coming in v1.1")
                     FeatureRow(icon: "chart.bar.fill", title: "Insights", subtitle: "Analytics that help you build better")
@@ -42,6 +42,7 @@ struct WelcomeView: View {
             }
             .padding(.horizontal, 24)
         }
+        .background(GVColors.background)
     }
 }
 
@@ -192,16 +193,23 @@ struct ProfileSetupView: View {
 }
 
 private struct FeatureRow: View {
+    @EnvironmentObject private var themeManager: ThemeManager
+
     let icon: String
     let title: String
     let subtitle: String
 
     var body: some View {
         HStack(spacing: 14) {
-            Image(systemName: icon)
-                .font(.title3)
-                .foregroundStyle(GVColors.accent)
-                .frame(width: 36)
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .fill(themeManager.accentGradient)
+                .frame(width: 40, height: 40)
+                .overlay {
+                    Image(systemName: icon)
+                        .font(.body.weight(.semibold))
+                        .foregroundStyle(.white)
+                }
+
             VStack(alignment: .leading, spacing: 2) {
                 Text(title)
                     .font(GVTypography.headline)
@@ -213,10 +221,15 @@ private struct FeatureRow: View {
             Spacer()
         }
         .padding(14)
-        .background(GVColors.surface, in: RoundedRectangle(cornerRadius: 12))
+        .background(GVColors.surface, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                .stroke(GVColors.border, lineWidth: 1)
+        )
     }
 }
 
 #Preview("Welcome") {
     WelcomeView(viewModel: AuthViewModel(onComplete: { _, _ in }))
+        .environmentObject(ThemeManager())
 }

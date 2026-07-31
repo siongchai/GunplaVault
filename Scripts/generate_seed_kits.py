@@ -8,6 +8,7 @@ This script remains as a lightweight offline fallback generator.
 
 import json
 import hashlib
+import os
 from datetime import date
 
 SERIES = {
@@ -57,12 +58,15 @@ def release_year(series: str, idx: int) -> int:
 def generate():
     kits = []
     seen = set()
+    existing_urls: dict[str, str | None] = {}
 
-    # Preserve curated starter kits
-    curated_path = __file__.replace("generate_seed_kits.py", "../GunplaVault/Resources/SeedData/seed_kits_curated.json")
+    # Preserve curated starter kits and existing box art URLs
+    seed_path = os.path.join(os.path.dirname(__file__), "..", "GunplaVault", "Resources", "SeedData", "seed_kits.json")
     try:
-        with open(curated_path.replace("seed_kits_curated.json", "seed_kits.json")) as f:
+        with open(seed_path) as f:
             existing = json.load(f)
+            for k in existing.get("kits", []):
+                existing_urls[k["id"]] = k.get("boxArtUrl")
             for k in existing.get("kits", [])[:10]:
                 if k["id"] not in seen:
                     kits.append(k)
@@ -92,6 +96,8 @@ def generate():
                         tags.append(variant.strip().strip("()"))
                     if grade == "P-Bandai":
                         tags.append("P-Bandai")
+
+                    existing_url = existing_urls.get(kid)
                     kits.append({
                         "id": kid,
                         "name": name,
@@ -102,7 +108,7 @@ def generate():
                         "partCount": part_count(grade) + (si * 7) % 120,
                         "modelNumber": f"{grade} {name}",
                         "barcode": None,
-                        "boxArtUrl": None,
+                        "boxArtUrl": existing_url,
                         "description": f"{grade} kit of the {name} from {series}.",
                         "isBandai": True,
                         "tags": tags[:4],
@@ -123,7 +129,6 @@ def generate():
     }
 
 if __name__ == "__main__":
-    import os
     out = os.path.join(os.path.dirname(__file__), "..", "GunplaVault", "Resources", "SeedData", "seed_kits.json")
     data = generate()
     with open(out, "w") as f:

@@ -130,23 +130,6 @@ struct GradeFilterRow: View {
     }
 }
 
-private struct FilterChip: View {
-    let title: String
-    let isSelected: Bool
-    let action: () -> Void
-
-    var body: some View {
-        Button(action: action) {
-            Text(title)
-                .font(GVTypography.caption)
-                .foregroundStyle(isSelected ? .white : GVColors.textSecondary)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 8)
-                .background(isSelected ? GVColors.accent : GVColors.surfaceSecondary, in: Capsule())
-        }
-    }
-}
-
 private struct SeedKitRow: View {
     let kit: SeedKit
     let isOwned: Bool
@@ -181,4 +164,5 @@ private struct SeedKitRow: View {
 #Preview {
     AddKitView()
         .environmentObject(CollectionStore(context: PersistenceController.shared.mainContext, profileStore: ProfileStore()))
+        .environmentObject(ThemeManager())
 }

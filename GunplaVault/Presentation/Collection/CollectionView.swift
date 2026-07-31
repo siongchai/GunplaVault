@@ -4,6 +4,7 @@ struct CollectionView: View {
     @EnvironmentObject private var appState: AppState
     @EnvironmentObject private var collectionStore: CollectionStore
     @EnvironmentObject private var profileStore: ProfileStore
+    @EnvironmentObject private var themeManager: ThemeManager
 
     @State private var showAddKit = false
 
@@ -11,18 +12,6 @@ struct CollectionView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    HStack {
-                        ScreenHeader(
-                            title: "Collection",
-                            subtitle: "\(collectionStore.stats.totalKits) kits · \(profileStore.tier.displayName) plan"
-                        )
-                        Spacer()
-                    }
-
-                    HStack {
-                        GVTextField(title: "Search", text: $collectionStore.searchQuery)
-                    }
-
                     GradeFilterRow(selectedGrade: $collectionStore.selectedGrade) {}
 
                     HStack {
@@ -33,39 +22,24 @@ struct CollectionView: View {
                                 }
                             }
                         } label: {
-                            Label("Sort: \(collectionStore.sort.label)", systemImage: "arrow.up.arrow.down")
+                            Label(collectionStore.sort.label, systemImage: "arrow.up.arrow.down")
                                 .font(GVTypography.caption)
-                                .foregroundStyle(GVColors.accent)
+                                .foregroundStyle(themeManager.accentColor)
                         }
+
                         Spacer()
+
                         if profileStore.tier == .free {
-                            Text("\(collectionStore.remainingFreeSlots)/\(SubscriptionConfig.freeKitLimit) free slots")
+                            Text("\(collectionStore.remainingFreeSlots)/\(SubscriptionConfig.freeKitLimit) free")
                                 .font(GVTypography.caption)
                                 .foregroundStyle(GVColors.textSecondary)
                         }
                     }
 
                     if collectionStore.filteredItems.isEmpty {
-                        GVCard {
-                            VStack(spacing: 12) {
-                                Image(systemName: "shippingbox")
-                                    .font(.largeTitle)
-                                    .foregroundStyle(GVColors.accent.opacity(0.5))
-                                Text("No kits yet")
-                                    .font(GVTypography.headline)
-                                Text("Search the catalog or add a kit manually.")
-                                    .font(GVTypography.callout)
-                                    .foregroundStyle(GVColors.textSecondary)
-                                    .multilineTextAlignment(.center)
-                                GVPrimaryButton(title: "Add Your First Kit") {
-                                    showAddKit = true
-                                }
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 8)
-                        }
+                        emptyState
                     } else {
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
+                        LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 12) {
                             ForEach(collectionStore.filteredItems) { item in
                                 NavigationLink(value: item.id) {
                                     CollectionKitCard(item: item)
@@ -79,10 +53,11 @@ struct CollectionView: View {
             }
             .background(GVColors.background)
             .navigationTitle("Collection")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.large)
+            .searchable(text: $collectionStore.searchQuery, prompt: "Search kits")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    HStack(spacing: 12) {
+                    HStack(spacing: 16) {
                         if collectionStore.isSyncing {
                             ProgressView()
                         } else if collectionStore.isCloudSyncEnabled {
@@ -97,8 +72,12 @@ struct CollectionView: View {
                                 collectionStore.showPaywall = true
                             }
                         } label: {
-                            Image(systemName: "plus")
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title3)
+                                .symbolRenderingMode(.hierarchical)
+                                .foregroundStyle(themeManager.accentColor)
                         }
+                        .accessibilityLabel("Add kit")
                     }
                 }
             }
@@ -116,37 +95,76 @@ struct CollectionView: View {
             }
         }
     }
+
+    private var emptyState: some View {
+        GVCard {
+            VStack(spacing: 14) {
+                Image(systemName: "shippingbox")
+                    .font(.system(size: 40))
+                    .foregroundStyle(themeManager.accentColor.opacity(0.5))
+                Text("No kits yet")
+                    .font(GVTypography.headline)
+                Text("Search the catalog or add a kit manually.")
+                    .font(GVTypography.callout)
+                    .foregroundStyle(GVColors.textSecondary)
+                    .multilineTextAlignment(.center)
+                GVPrimaryButton(title: "Add Your First Kit") {
+                    showAddKit = true
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 8)
+        }
+    }
 }
 
-private struct CollectionKitCard: View {
+struct CollectionKitCard: View {
+    @EnvironmentObject private var themeManager: ThemeManager
+
     let item: CollectionItem
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            BoxArtImage(urlString: item.boxArtURL, cornerRadius: 10)
-                .frame(height: 100)
-                .frame(maxWidth: .infinity)
+        VStack(alignment: .leading, spacing: 0) {
+            ZStack(alignment: .topLeading) {
+                BoxArtImage(urlString: item.boxArtURL, cornerRadius: 12)
+                    .frame(height: 110)
+                    .frame(maxWidth: .infinity)
 
-            HStack {
-                GVCapsuleBadge(text: item.grade.rawValue)
-                Spacer()
-                StatusBadge(status: item.status)
+                GVCapsuleBadge(text: item.grade.rawValue, tint: themeManager.accentColor)
+                    .padding(8)
             }
 
-            Text(item.name)
-                .font(GVTypography.caption)
-                .foregroundStyle(GVColors.textPrimary)
-                .lineLimit(2)
-                .multilineTextAlignment(.leading)
+            VStack(alignment: .leading, spacing: 6) {
+                Text(item.name)
+                    .font(GVTypography.callout.weight(.semibold))
+                    .foregroundStyle(GVColors.textPrimary)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
+
+                HStack {
+                    if item.status == .inProgress {
+                        Text("\(item.buildProgressPercent)%")
+                            .font(GVTypography.caption)
+                            .foregroundStyle(themeManager.accentColor)
+                    }
+                    Spacer()
+                    StatusBadge(status: item.status)
+                }
+            }
+            .padding(10)
         }
-        .padding(10)
-        .background(GVColors.surface, in: RoundedRectangle(cornerRadius: 14))
-        .overlay(RoundedRectangle(cornerRadius: 14).stroke(GVColors.border, lineWidth: 1))
+        .background(GVColors.surface, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .stroke(GVColors.border, lineWidth: 1)
+        )
     }
 }
 
 #Preview {
     CollectionView()
+        .environmentObject(AppState.makeDefault(authService: MockAuthService.shared))
         .environmentObject(CollectionStore(context: PersistenceController.shared.mainContext, profileStore: ProfileStore()))
         .environmentObject(ProfileStore())
+        .environmentObject(ThemeManager())
 }

@@ -11,6 +11,7 @@ struct GunplaVaultApp: App {
                 .environmentObject(appState)
                 .environmentObject(themeManager)
                 .preferredColorScheme(themeManager.colorScheme)
+                .tint(themeManager.accentColor)
         }
     }
 }

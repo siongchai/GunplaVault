@@ -67,6 +67,19 @@ open GunplaVault.xcodeproj
 2. Settings → Accessibility → Reduce Motion — splash should skip to logo
 3. Profile → verify version, Privacy, Terms
 4. Home screen icon should show brand helmet
+5. Collection grid should show kit box art for catalog entries
+
+## Seed database box art
+
+The catalog has **~1,850 real Gunpla kits** (most with box art URLs) sourced from Gunpla Wiki, GunplaDB, and HLJ.
+
+```bash
+# Full import pipeline (mobile branch scripts)
+python3 Scripts/import_kits_with_images.py
+
+# Wiki-only refresh for existing seed entries
+python3 Scripts/fetch_box_art.py
+```
 
 ## Completed Phases
 
