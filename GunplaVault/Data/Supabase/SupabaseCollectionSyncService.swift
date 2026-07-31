@@ -15,6 +15,7 @@ final class SupabaseCollectionSyncService: CollectionSyncService, @unchecked Sen
         let release_year: Int
         let part_count: Int?
         let model_number: String?
+        let box_art_url: String?
         let notes: String?
         let price_paid: Double?
         let status: String
@@ -107,6 +108,7 @@ final class SupabaseCollectionSyncService: CollectionSyncService, @unchecked Sen
             releaseYear: row.release_year,
             partCount: row.part_count,
             modelNumber: row.model_number,
+            boxArtURL: row.box_art_url,
             notes: row.notes,
             pricePaid: row.price_paid,
             status: CollectionStatus(rawValue: row.status) ?? .backlog,
@@ -135,6 +137,7 @@ final class SupabaseCollectionSyncService: CollectionSyncService, @unchecked Sen
             release_year: item.releaseYear,
             part_count: item.partCount,
             model_number: item.modelNumber,
+            box_art_url: item.boxArtURL,
             notes: item.notes,
             price_paid: item.pricePaid,
             status: item.status.rawValue,

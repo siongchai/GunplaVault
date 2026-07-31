@@ -123,14 +123,9 @@ private struct CollectionKitCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(GVColors.surfaceSecondary)
+            BoxArtImage(urlString: item.boxArtURL, cornerRadius: 10)
                 .frame(height: 100)
-                .overlay {
-                    Image(systemName: "shippingbox.fill")
-                        .font(.largeTitle)
-                        .foregroundStyle(GVColors.accent.opacity(0.5))
-                }
+                .frame(maxWidth: .infinity)
 
             HStack {
                 GVCapsuleBadge(text: item.grade.rawValue)

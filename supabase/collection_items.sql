@@ -11,6 +11,7 @@ create table if not exists public.collection_items (
   release_year int not null,
   part_count int,
   model_number text,
+  box_art_url text,
   notes text,
   price_paid numeric,
   status text not null default 'backlog',

@@ -153,13 +153,8 @@ private struct SeedKitRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            RoundedRectangle(cornerRadius: 8)
-                .fill(GVColors.surfaceSecondary)
+            BoxArtImage(urlString: kit.boxArtURL, cornerRadius: 8)
                 .frame(width: 52, height: 52)
-                .overlay {
-                    Image(systemName: "shippingbox.fill")
-                        .foregroundStyle(GVColors.accent.opacity(0.5))
-                }
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(kit.name)

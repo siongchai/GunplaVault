@@ -1,0 +1,542 @@
+[
+  {
+    "name": "XXXG-01SR2 Gundam Sandrock Custom EW",
+    "grade": "HG",
+    "release": "June 2026",
+    "description": "Bandai has equipped the kit with an all-new W-series frame that recreates the Endless Waltz design while giving the mobile suit improved articulation for dynamic action poses straight out of the film.",
+    "series": "Gundam Wing",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ORX-139 Hambrabi (GQ)",
+    "grade": "HG",
+    "release": "June 2026",
+    "description": "The Hambrabi, developed by Augusta Labs, stood out as a rare prototype capable of transforming from Mobile Suit mode into Mobile Armor mode.",
+    "series": "GQuuuuuuX",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Me02R-M01 Messer Type-M01 (Gawman Use)",
+    "grade": "HG",
+    "release": "May 2026",
+    "description": "Within the film, the Messer M-type was deployed as a replacement unit after Gawman lost his original F-type during the Davao air raid.",
+    "series": "Hathaway's Flash",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ASW-G-08 Gundam Barbatos Adapt",
+    "grade": "HG",
+    "release": "May 2026",
+    "description": "P-Bandai Exclusive release. This new GunPla celebrates the screening of the recompiled Urdr Hunt.",
+    "series": "Iron-Blooded Orphans",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "TX-ff104 ALYZEUS",
+    "grade": "HG",
+    "release": "April 2026",
+    "description": "The Alyzeus was hastily developed as a dedicated training unit for Lane Aim.",
+    "series": "Hathaway's Flash",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RX-105 XI GUNDAM",
+    "grade": "HG",
+    "release": "April 2026",
+    "description": "The release partially shares molds with the original HGUC 1/144 Xi Gundam launched in 2021.",
+    "series": "Hathaway's Flash",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "OZ-13MS Gundam Epyon",
+    "grade": "RG",
+    "release": "March 2026",
+    "description": "The Gundam Base Limited release, color coating variant of RG Epyon",
+    "series": "Gundam Wing",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Mass Produced Ruka's Zaku II",
+    "grade": "HG",
+    "release": "March 2026",
+    "description": "P-Bandai Exclusive release from the TV drama Ryosangata Ruka.",
+    "series": "Mobile Suit Gundam",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "XXXG-01SR Gundam Sandrock EW (Armadillo Lizard equipped)",
+    "grade": "MG",
+    "release": "March 2026",
+    "description": "P-Bandai Exclusive release adapting the Armadillo Lizard equipment.",
+    "series": "Gundam Wing",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RX-121-1 Gundam TR-1 [Hazel Custom] with Icarus Unit",
+    "grade": "HG",
+    "release": "March 2026",
+    "description": "P-Bandai Exclusive release with newly molded Icarus Unit parts.",
+    "series": "Advance of Zeta",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "F90IIIY Cluster Gundam Mission Pack X Type",
+    "grade": "MG",
+    "release": "March 2026",
+    "description": "P-Bandai Exclusive release. Mission Pack only.",
+    "series": "Gundam F90",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ZGMF/A-262B Strike Freedom Gundam Type II (Wings of Light Effect Set)",
+    "grade": "HG",
+    "release": "March 2026",
+    "description": "P-Bandai Exclusive release featuring the Wings of Light effect.",
+    "series": "Gundam SEED Freedom",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "FA-010S (FA-010B) Full Armor ZZ Gundam Ver. Ka",
+    "grade": "MG",
+    "release": "February 2026",
+    "description": "Full Armor ZZ Gundam Ver.Ka with additional missile launchers and reinforced armor.",
+    "series": "ZZ Gundam",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RGM-79SC GM Sniper Custom",
+    "grade": "MG",
+    "release": "February 2026",
+    "description": "The Gundam Base Limited release in Z Gundam-inspired colors.",
+    "series": "Zeta Gundam",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MS-09 Challia's Rick Dom",
+    "grade": "HG",
+    "release": "February 2026",
+    "description": "Evolved Rick Dom reconfigured for space warfare with a third rear leg unit.",
+    "series": "GQuuuuuuX",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ZGMF-X42S Destiny Gundam",
+    "grade": "MGSD",
+    "release": "February 2026",
+    "description": "Fifth entry in Bandai's MGSD series.",
+    "series": "Gundam SEED DESTINY",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "FD-03-00 Gustav Karl Type-00",
+    "grade": "HG",
+    "release": "February 2026",
+    "description": "Earth Federation Forces mass-production mobile suit from U.C. 0105.",
+    "series": "Hathaway's Flash",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Gundam Astray Red Dragon",
+    "grade": "RG",
+    "release": "February 2026",
+    "description": "P-Bandai Exclusive release with Caledfwlch and Flight Unit.",
+    "series": "Gundam SEED Astray",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RX-93 nu Gundam",
+    "grade": "PG",
+    "release": "January 2026",
+    "description": "PERFECT GRADE UNLEASHED 1/60 Nu Gundam for Gunpla 45th Anniversary.",
+    "series": "Char's Counterattack",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RX-93 nu Gundam (LED Unit)",
+    "grade": "PG",
+    "release": "January 2026",
+    "description": "LED Unit for PG Unleashed nu Gundam",
+    "series": "Char's Counterattack",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ZGMF-X666S Legend Gundam",
+    "grade": "HG",
+    "release": "January 2026",
+    "description": "HG 1/144 Legend Gundam with SEED Action System.",
+    "series": "Gundam SEED DESTINY",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Gundam QuuuuuuX \"Endymion Unit Awakened\"",
+    "grade": "HG",
+    "release": "January 2026",
+    "description": "Endymion unit Omega Psycommu variant.",
+    "series": "GQuuuuuuX",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ZGMF-X20A Strike Freedom Gundam [Mechanical Clear]",
+    "grade": "MGEX",
+    "release": "January 2026",
+    "description": "P-Bandai Exclusive Mechanical Clear color variant of MGEX Strike Freedom.",
+    "series": "Gundam SEED DESTINY",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RX-78-01-01 GUNDAM [GQ]",
+    "grade": "HG",
+    "release": "January 2026",
+    "description": "P-Bandai Exclusive release with newly sculpted visor-style head.",
+    "series": "GQuuuuuuX",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "G-Self (Atmospheric Pack & Space Pack) (Reconguista in G Movie Ver.)",
+    "grade": "HG",
+    "release": "January 2026",
+    "description": "P-Bandai Exclusive with Atmospheric and Space Packs.",
+    "series": "Reconguista in G",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "AMS-119 Geara Doga Heavy Armed Type",
+    "grade": "HG",
+    "release": "January 2026",
+    "description": "Gundam Side-F Limited release with Lange Bruno Gun.",
+    "series": "Char's Counterattack",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "GAT-X105B/EG Build Strike Exceed Galaxy [PAINTING MODEL]",
+    "grade": "EG",
+    "release": "December 2025",
+    "description": "Gundam Base Limited Non Color variant.",
+    "series": "Build Fighters",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ZGMF-X20A Strike Freedom Gundam [Twilight Coating Ver.]",
+    "grade": "MGEX",
+    "release": "December 2025",
+    "description": "Gundam Base Limited Twilight Coating variant of MGEX Strike Freedom.",
+    "series": "Gundam SEED DESTINY",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RX-78-02 WHITE GUNDAM",
+    "grade": "HG",
+    "release": "December 2025",
+    "description": "White Gundam from GQuuuuuuX with Core Block System.",
+    "series": "GQuuuuuuX",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MS-06S CHAR'S ZAKU (GQ)",
+    "grade": "HG",
+    "release": "December 2025",
+    "description": "Char's Zaku II from Mobile Suit Gundam GQuuuuuuX.",
+    "series": "GQuuuuuuX",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ASW-G-61 GUNDAM ZAGAN",
+    "grade": "HG",
+    "release": "December 2025",
+    "description": "Gundam Zagan from IRON-BLOODED ORPHANS: Urdr-Hunt.",
+    "series": "Iron-Blooded Orphans",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "OZ-19MASX GUNDAM GRIEPE",
+    "grade": "HG",
+    "release": "December 2025",
+    "description": "P-Bandai exclusive with MS, Assault, and MA modes.",
+    "series": "Gundam Wing",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Kith for GUNPLA MG 1/100 RX-78-2 Gundam Ver. 2.0",
+    "grade": "MG",
+    "release": "December 2025",
+    "description": "Kith collaboration MG RX-78-2 Gundam Ver. 2.0.",
+    "series": "Mobile Suit Gundam",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Kith for GUNPLA MG 1/100 Wing Gundam",
+    "grade": "MG",
+    "release": "December 2025",
+    "description": "Kith collaboration MG Wing Gundam for 30th anniversary.",
+    "series": "Gundam Wing",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RX-78-7 Gundam G07",
+    "grade": "HG",
+    "release": "December 2025",
+    "description": "P-Bandai Exclusive from Mobile Suit Gundam Senki.",
+    "series": "Mobile Suit Gundam Senki",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ASW-G-08 Gundam Barbatos Lupus",
+    "grade": "MG",
+    "release": "November 2025",
+    "description": "Master Grade Barbatos Lupus rebuilt for high-speed close-quarters combat.",
+    "series": "Iron-Blooded Orphans",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "GN-005 GUNDAM VIRTUE",
+    "grade": "MG",
+    "release": "November 2025",
+    "description": "Gundam Base Limited clear color variant of MG Virtue.",
+    "series": "Gundam 00",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MBF-P05LM2 Gundam Astray Mirage Frame 2nd Issue",
+    "grade": "MG",
+    "release": "November 2025",
+    "description": "P-Bandai Exclusive close-range combat Mirage Frame.",
+    "series": "Gundam SEED Astray",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MS-06 Zaku (GQ)",
+    "grade": "HG",
+    "release": "November 2025",
+    "description": "HG Zaku from GQuuuuuuX with updated design.",
+    "series": "GQuuuuuuX",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "UGY-R267MM Monkey Rodi (598 unit)/ Monkey Crab Rodi",
+    "grade": "HG",
+    "release": "November 2025",
+    "description": "Interchangeable parts for Monkey Crab Rodi variant.",
+    "series": "Iron-Blooded Orphans",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "GF13-044NNP MANDOR GUNDAM",
+    "grade": "HG",
+    "release": "November 2025",
+    "description": "P-Bandai Exclusive with Defense Mode and Khakkhara staff.",
+    "series": "G Gundam",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Sengoku Astray Gundam [Metallic]",
+    "grade": "MG",
+    "release": "November 2025",
+    "description": "Gundam Base Limited metallic color variant.",
+    "series": "Build Fighters",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "XXXG-01W Wing Gundam",
+    "grade": "EG",
+    "release": "October 2025",
+    "description": "Entry Grade Wing Gundam for 30th anniversary.",
+    "series": "Gundam Wing",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RGM-79U GM SLOEP",
+    "grade": "HG",
+    "release": "October 2025",
+    "description": "P-Bandai Exclusive underwater operations GM.",
+    "series": "Mobile Suit Gundam",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "XM-02 Den'an Gei",
+    "grade": "RE-100",
+    "release": "October 2025",
+    "description": "RE/100 Den'an Gei for guerrilla warfare.",
+    "series": "Crossbone Gundam",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "RGM-79 Sayla's Light-Type Guncannon",
+    "grade": "HG",
+    "release": "October 2025",
+    "description": "P-Bandai Exclusive color variant.",
+    "series": "Mobile Suit Gundam",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "XXXG-00W0 Wing Gundam Zero",
+    "grade": "RG",
+    "release": "September 2025",
+    "description": "Real Grade Wing Gundam Zero with new design for 30th anniversary.",
+    "series": "Gundam Wing",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MS-09 Gaia's/Ortega's Rick Dom (GQ)",
+    "grade": "HG",
+    "release": "September 2025",
+    "description": "Purple Rick Dom Gaia/Ortega variant from GQuuuuuuX.",
+    "series": "GQuuuuuuX",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Gundam Naion",
+    "grade": "HG",
+    "release": "September 2025",
+    "description": "P-Bandai Exclusive with clear black shell units.",
+    "series": "The Witch from Mercury",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "SVMS-01X Union Flag Custom II/ GN Flag",
+    "grade": "HG",
+    "release": "September 2025",
+    "description": "P-Bandai Exclusive GN Flag with opening goggles.",
+    "series": "Gundam 00",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MBF-02 Strike Rouge",
+    "grade": "EG",
+    "release": "January 2025",
+    "description": "Color variant of EG Strike Gundam.",
+    "series": "Gundam SEED",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "GNY-001 Gundam Astraea + Proto GN Twin Broad Blade",
+    "grade": "MG",
+    "release": "January 2025",
+    "description": "P-Bandai Exclusive parts variant of MG Exia.",
+    "series": "Gundam 00",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "06MS-SR2 Leo-R",
+    "grade": "HG",
+    "release": "January 2025",
+    "description": "P-Bandai Exclusive custom Leo from G-Unit.",
+    "series": "Gundam Wing G-Unit",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MS-06Rb-b Zaku II Unidentified Type (LeSean)",
+    "grade": "HG",
+    "release": "January 2025",
+    "description": "P-Bandai Exclusive from Requiem for Vengeance.",
+    "series": "Requiem for Vengeance",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ORB-01 Akatsuki Gundam (Oowashi Pack)",
+    "grade": "RG",
+    "release": "December 2024",
+    "description": "RG Akatsuki with gold plating and Oowashi Pack.",
+    "series": "Gundam SEED DESTINY",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Shiranui Pack",
+    "grade": "RG",
+    "release": "December 2024",
+    "description": "Shiranui pack for RG Akatsuki Gundam.",
+    "series": "Gundam SEED DESTINY",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Riko's Mass Production Zaku II",
+    "grade": "MG",
+    "release": "December 2024",
+    "description": "P-Bandai Exclusive color variant celebrating Mass-Produced Riko.",
+    "series": "Mobile Suit Gundam",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "Hizack Custom (AOZ Re-Boot)",
+    "grade": "HG",
+    "release": "December 2024",
+    "description": "P-Bandai Exclusive AOZ Re-Boot Hizack Custom.",
+    "series": "Advance of Zeta",
+    "pBandai": true,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "ASW-G-08 Gundam Barbatos (Cross Contrast Colors)",
+    "grade": "MG",
+    "release": "December 2024",
+    "description": "Cross Contrast Color dark blue Barbatos.",
+    "series": "Iron-Blooded Orphans",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  },
+  {
+    "name": "MBF-P02Kai ASTRAY RED FRAME KAI (CROSS CONTRAST COLOR)",
+    "grade": "MG",
+    "release": "December 2024",
+    "description": "Cross Contrast Color Astray Red Frame Kai.",
+    "series": "Gundam SEED Astray",
+    "pBandai": false,
+    "source": "gunpladb.net"
+  }
+]

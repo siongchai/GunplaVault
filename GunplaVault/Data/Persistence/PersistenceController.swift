@@ -27,15 +27,24 @@ enum GunplaSchemaV3: VersionedSchema {
     }
 }
 
+enum GunplaSchemaV4: VersionedSchema {
+    static var versionIdentifier = Schema.Version(4, 0, 0)
+
+    static var models: [any PersistentModel.Type] {
+        [CollectionItemRecord.self, VirtualShelfRecord.self]
+    }
+}
+
 enum GunplaVaultMigrationPlan: SchemaMigrationPlan {
     static var schemas: [any VersionedSchema.Type] {
-        [GunplaSchemaV1.self, GunplaSchemaV2.self, GunplaSchemaV3.self]
+        [GunplaSchemaV1.self, GunplaSchemaV2.self, GunplaSchemaV3.self, GunplaSchemaV4.self]
     }
 
     static var stages: [MigrationStage] {
         [
             MigrationStage.lightweight(fromVersion: GunplaSchemaV1.self, toVersion: GunplaSchemaV2.self),
-            MigrationStage.lightweight(fromVersion: GunplaSchemaV2.self, toVersion: GunplaSchemaV3.self)
+            MigrationStage.lightweight(fromVersion: GunplaSchemaV2.self, toVersion: GunplaSchemaV3.self),
+            MigrationStage.lightweight(fromVersion: GunplaSchemaV3.self, toVersion: GunplaSchemaV4.self)
         ]
     }
 }
@@ -60,7 +69,7 @@ enum PersistenceController {
     }
 
     private static func createContainer(resetIfNeeded: Bool) -> ModelContainer {
-        let schema = Schema(versionedSchema: GunplaSchemaV3.self)
+        let schema = Schema(versionedSchema: GunplaSchemaV4.self)
         let configuration = ModelConfiguration(schema: schema, url: storeURL)
 
         do {

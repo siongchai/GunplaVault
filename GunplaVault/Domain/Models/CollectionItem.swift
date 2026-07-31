@@ -15,6 +15,7 @@ struct CollectionItem: Identifiable, Equatable, Codable {
     var releaseYear: Int
     var partCount: Int?
     var modelNumber: String?
+    var boxArtURL: String?
     var notes: String?
     var pricePaid: Double?
     var status: CollectionStatus
@@ -40,6 +41,7 @@ struct CollectionItem: Identifiable, Equatable, Codable {
         releaseYear: Int,
         partCount: Int? = nil,
         modelNumber: String? = nil,
+        boxArtURL: String? = nil,
         notes: String? = nil,
         pricePaid: Double? = nil,
         status: CollectionStatus = .backlog,
@@ -64,6 +66,7 @@ struct CollectionItem: Identifiable, Equatable, Codable {
         self.releaseYear = releaseYear
         self.partCount = partCount
         self.modelNumber = modelNumber
+        self.boxArtURL = boxArtURL
         self.notes = notes
         self.pricePaid = pricePaid
         self.status = status
@@ -90,6 +93,7 @@ struct CollectionItem: Identifiable, Equatable, Codable {
             releaseYear: seedKit.releaseYear,
             partCount: seedKit.partCount,
             modelNumber: seedKit.modelNumber,
+            boxArtURL: seedKit.boxArtURL,
             customTags: seedKit.tags
         )
     }

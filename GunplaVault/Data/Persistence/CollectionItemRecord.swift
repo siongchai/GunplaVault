@@ -13,6 +13,7 @@ final class CollectionItemRecord {
     var releaseYear: Int
     var partCount: Int?
     var modelNumber: String?
+    var boxArtURL: String?
     var notes: String?
     var pricePaid: Double?
     var statusRaw: String
@@ -52,6 +53,7 @@ final class CollectionItemRecord {
         releaseYear = item.releaseYear
         partCount = item.partCount
         modelNumber = item.modelNumber
+        boxArtURL = item.boxArtURL
         notes = item.notes
         pricePaid = item.pricePaid
         statusRaw = item.status.rawValue
@@ -76,6 +78,7 @@ final class CollectionItemRecord {
         releaseYear = item.releaseYear
         partCount = item.partCount
         modelNumber = item.modelNumber
+        boxArtURL = item.boxArtURL
         notes = item.notes
         pricePaid = item.pricePaid
         statusRaw = item.status.rawValue
@@ -103,6 +106,7 @@ final class CollectionItemRecord {
             releaseYear: releaseYear,
             partCount: partCount,
             modelNumber: modelNumber,
+            boxArtURL: boxArtURL,
             notes: notes,
             pricePaid: pricePaid,
             status: CollectionStatus(rawValue: statusRaw) ?? .backlog,

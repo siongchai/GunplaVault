@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Generate seed_kits.json with ~500 Gunpla catalog entries."""
+"""Generate seed_kits.json with ~500 Gunpla catalog entries.
+
+NOTE: Prefer Scripts/import_kits_with_images.py + Scripts/merge_supplemental_kits.py
+for a real catalog with box art (gunpla.fandom.com, gunpladb.net, HLJ).
+This script remains as a lightweight offline fallback generator.
+"""
 
 import json
 import hashlib

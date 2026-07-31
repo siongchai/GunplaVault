@@ -75,14 +75,9 @@ struct KitDetailView: View {
 
     private func heroSection(_ item: CollectionItem) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            RoundedRectangle(cornerRadius: 16)
-                .fill(GVColors.surfaceSecondary)
-                .frame(height: 180)
-                .overlay {
-                    Image(systemName: "shippingbox.fill")
-                        .font(.system(size: 64))
-                        .foregroundStyle(GVColors.accent.opacity(0.4))
-                }
+            BoxArtImage(urlString: item.boxArtURL, cornerRadius: 16)
+                .frame(height: 220)
+                .frame(maxWidth: .infinity)
 
             HStack {
                 GVCapsuleBadge(text: item.grade.rawValue)
