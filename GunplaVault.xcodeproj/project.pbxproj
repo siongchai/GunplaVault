@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0046D065CF9EC19137B5DE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECB3C57BE71A648352C5365 /* Assets.xcassets */; };
+		054E235A6D1E3A52AA4F908E /* ShelfStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93D5409E13A2F26BC13DCB3 /* ShelfStore.swift */; };
+		06BFE29DE928FA141E19F597 /* LocalProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CFE53A8D9D229D7C60AD00 /* LocalProfileService.swift */; };
+		137918C033C239C6C02036A5 /* ManualKitEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A558160393EB05B387146 /* ManualKitEntryView.swift */; };
+		1864BB4CA40BF69F2E582331 /* AchievementModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE1E5A1C93A219B747EC86 /* AchievementModels.swift */; };
+		1F34701018F5F701F99E9C78 /* AuthServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B18B42700711164C890D12 /* AuthServiceFactory.swift */; };
+		2310E966F9C66154F8C8C1FB /* BuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E870F2733FE10133A3A3D8CE /* BuildView.swift */; };
+		262CF8F44A90A0E1457C9D46 /* AuthFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0575E177A1C8070CC566E5E /* AuthFlowView.swift */; };
+		2640984DE5535FC23CAC41E2 /* VirtualShelfRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC5C551764BCD4B60C8879 /* VirtualShelfRecord.swift */; };
+		2CE345AB7D8C293DD182B7BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5BE8A42C9763D7A2203F55 /* AppState.swift */; };
+		2D6A9B199BBBF33723352171 /* SupabaseProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD3CA1F24FCD5595BFB84E /* SupabaseProfileService.swift */; };
+		32D9739097EBF5A27A2CDB3B /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC0C39FA1EDB029E19DB93 /* AnalyticsView.swift */; };
+		34C4051176DA1F69C6429519 /* ExploreComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C52DE8775F1F006B7FA393 /* ExploreComingSoonView.swift */; };
+		3E89B79851C5C2580B17ED5F /* BuildProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D45FE7CAD26460802CE3A /* BuildProgressRing.swift */; };
+		3F756F8EFDF81223B227FFB8 /* ShelvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5533E96FF0C37D8A1B40A /* ShelvesView.swift */; };
+		43742CEEB4BE25CDAACCC4CA /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40A8B8575525C2EDFC9D7C /* SubscriptionManager.swift */; };
+		4674EEE7D2CA1BBCD40386A6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DB3D462BC28311A958B99E /* RootView.swift */; };
+		490EBC76861357852D85EB5C /* SubscriptionProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF0BB1091873D4A2E827A2 /* SubscriptionProducts.swift */; };
+		497CDAA7DE2EAB21B48823E2 /* ShelfPhotoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FBF750B714B7C4D9E2EFD /* ShelfPhotoStorage.swift */; };
+		4C3C73519888D5B1CC7ACA43 /* SupabaseCollectionSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14A357237E68517CE5BEA1 /* SupabaseCollectionSyncService.swift */; };
+		4D8E81646C8476FE9F019154 /* SupabaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA54A314A7953C9A18028F8 /* SupabaseAuthService.swift */; };
+		512A31600409A45084F51688 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762B542B960CAAFBA00D6F4 /* HomeView.swift */; };
+		512FB2B37A43401877A9C8AF /* SwiftDataCollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B8ABF3D2A8B3FB34850868 /* SwiftDataCollectionRepository.swift */; };
+		569200FD7165837A62375086 /* SeedKitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414670E1CBDFDE547C5E2020 /* SeedKitLoader.swift */; };
+		61470F96867554DD4129F4D0 /* ProfileNavRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2865C238E531CD9C45F39D /* ProfileNavRow.swift */; };
+		6313B20DE02D29FC96FC8C32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0318CEBB2B3D7C5DBC895B /* ProfileView.swift */; };
+		646CD01CC5834E34A73BECF2 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE2F8D74408D11CB1556DA /* DesignSystem.swift */; };
+		659190B0D528C15B2EA4AD3B /* CollectionItemRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2135508080CC94879856D291 /* CollectionItemRecord.swift */; };
+		65B833AC6F415C01C2C5D5D3 /* SeedKitCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D990AE9478C6AC299A60E12 /* SeedKitCatalog.swift */; };
+		6D5F4D011E8453E618D98330 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8BC6368742D80737FD19E4A6 /* Supabase */; };
+		6E0982643978E6DC431CC299 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B512C9CF0919E0F8293AE703 /* PaywallView.swift */; };
+		781871DDFDE79BC85C2F8AAB /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA42C9548BEFBC28A1AF92D /* CollectionView.swift */; };
+		78DEA802DEE2B11B1BCA088E /* BrandMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038253259451160D5C47241 /* BrandMarkView.swift */; };
+		7F798CD35611477814086E9D /* CollectionSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C8BABFCBD9BAA6E5EEA006 /* CollectionSyncService.swift */; };
+		80A78EA1A65BD531861944D8 /* GunplaVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5253F72EDB4C324B7144D464 /* GunplaVaultApp.swift */; };
+		82113D10C46492A5FB485C70 /* AchievementsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712D28C6F79AFF1C2021DD5 /* AchievementsSection.swift */; };
+		8453B26AE5C7CEFC23A8A142 /* ShelfModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFCF4410017CAE33457E070 /* ShelfModels.swift */; };
+		88CF68AEAB22E074DB470905 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C18C93E1C9D8C03B07342 /* Models.swift */; };
+		8B8A6EA491036C7AD53426E4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E72067BDFD59298E28C362 /* SplashView.swift */; };
+		A50323CF107C7BFF92F6E362 /* AddKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC63D220FE9AB8B2744F6353 /* AddKitView.swift */; };
+		AB365FCC599379541A9085C0 /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB016671DBCCAA359C507C /* CollectionItem.swift */; };
+		B1B7ED2598DC98E61793B4D2 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5822220E3DC28C3E1A95DE /* PersistenceController.swift */; };
+		B67E1F4C8CC45EA1E1103A26 /* AnalyticsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4CED21B1732BB157569CF /* AnalyticsModels.swift */; };
+		B80C975A55AE3F10F15CF1FD /* BuildSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF81241B36D7FFCBB6DD8C2E /* BuildSessionView.swift */; };
+		B8C9E8DBF630115F07179F73 /* CollectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E692B7C80734BDE5225FE77D /* CollectionStore.swift */; };
+		BBEC3E7E7D55B54F5C55BD1D /* KitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FDFEE3917FD579D7B2B121 /* KitDetailView.swift */; };
+		BC5C4B529C41F282D4339016 /* seed_kits.json in Resources */ = {isa = PBXBuildFile; fileRef = 08DF8D19165806CA3AF666AB /* seed_kits.json */; };
+		C2114B521D9104932B429D58 /* BuildPhotoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C75B262CC2C3B7580092B /* BuildPhotoStorage.swift */; };
+		C29E496C051F2C82CA9F0839 /* SwiftDataShelfRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4D21B6689C5C174C1C649 /* SwiftDataShelfRepository.swift */; };
+		D07A23726BE9A78384DF7616 /* BuildModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1C412BCD428DC1F5F98B53 /* BuildModels.swift */; };
+		D1D7ED94E60875B68FAE2298 /* BuildStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246895DC8DB5FB95CC175941 /* BuildStore.swift */; };
+		D39EF04854A54958324A4BE7 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A6F040344A4C9830C060A /* Repositories.swift */; };
+		DA3142016D4D4F663E6C3C69 /* AuthViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B966FF94D506F19FE29FB10 /* AuthViews.swift */; };
+		DEEDB71C21D04622C8B29195 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D845BA8B5AB9787C8154811 /* MainTabView.swift */; };
+		E65809CAAE94854B2465E0E2 /* Secrets.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = F99FB3064514FDC21CD15F97 /* Secrets.example.plist */; };
+		ED5E05BA80297A3120DA7814 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9313C0061031D04F3A5E9 /* AuthService.swift */; };
+		EE89FFBB776D508E9BED223A /* LocalCollectionSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AB24209B65710AA746C46D /* LocalCollectionSyncService.swift */; };
+		EF216679321C6412F446AF7F /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0F95915CE1F707B467A30 /* SubscriptionStore.swift */; };
+		F07F4A4BD8FBEAFF78A32F60 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833B56687E1D5B21CC24F96 /* SupabaseManager.swift */; };
+		F12B4F98C3B9127F34152548 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A832B9B81BF8F1D782BB5 /* ProfileStore.swift */; };
+		F8F3C8BEA8C3B36B67C0F9DD /* LegalViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDFFD1B564E0A1B47E481F3 /* LegalViews.swift */; };
+		FC7CCD5C16E5CC36C1620E33 /* CollectionExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B79DA8648C8B65E4D5F02B5 /* CollectionExporter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		067E72E37569080F8EA13ACF /* GunplaVault.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GunplaVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0762B542B960CAAFBA00D6F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		08DF8D19165806CA3AF666AB /* seed_kits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = seed_kits.json; sourceTree = "<group>"; };
+		0B79DA8648C8B65E4D5F02B5 /* CollectionExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExporter.swift; sourceTree = "<group>"; };
+		0D5BE8A42C9763D7A2203F55 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		11C52DE8775F1F006B7FA393 /* ExploreComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreComingSoonView.swift; sourceTree = "<group>"; };
+		13FDFEE3917FD579D7B2B121 /* KitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitDetailView.swift; sourceTree = "<group>"; };
+		16BD3CA1F24FCD5595BFB84E /* SupabaseProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseProfileService.swift; sourceTree = "<group>"; };
+		1E0FBF750B714B7C4D9E2EFD /* ShelfPhotoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfPhotoStorage.swift; sourceTree = "<group>"; };
+		1E8A6F040344A4C9830C060A /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		2135508080CC94879856D291 /* CollectionItemRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemRecord.swift; sourceTree = "<group>"; };
+		246895DC8DB5FB95CC175941 /* BuildStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildStore.swift; sourceTree = "<group>"; };
+		2B966FF94D506F19FE29FB10 /* AuthViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViews.swift; sourceTree = "<group>"; };
+		2CA9313C0061031D04F3A5E9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2D990AE9478C6AC299A60E12 /* SeedKitCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedKitCatalog.swift; sourceTree = "<group>"; };
+		34CFE53A8D9D229D7C60AD00 /* LocalProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProfileService.swift; sourceTree = "<group>"; };
+		37E4CED21B1732BB157569CF /* AnalyticsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModels.swift; sourceTree = "<group>"; };
+		414670E1CBDFDE547C5E2020 /* SeedKitLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedKitLoader.swift; sourceTree = "<group>"; };
+		4712D28C6F79AFF1C2021DD5 /* AchievementsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsSection.swift; sourceTree = "<group>"; };
+		4FA54A314A7953C9A18028F8 /* SupabaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseAuthService.swift; sourceTree = "<group>"; };
+		5253F72EDB4C324B7144D464 /* GunplaVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunplaVaultApp.swift; sourceTree = "<group>"; };
+		5FCE1E5A1C93A219B747EC86 /* AchievementModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModels.swift; sourceTree = "<group>"; };
+		67E72067BDFD59298E28C362 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		6ADF0BB1091873D4A2E827A2 /* SubscriptionProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionProducts.swift; sourceTree = "<group>"; };
+		6D845BA8B5AB9787C8154811 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		79C5533E96FF0C37D8A1B40A /* ShelvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelvesView.swift; sourceTree = "<group>"; };
+		7A0318CEBB2B3D7C5DBC895B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7DDC0C39FA1EDB029E19DB93 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		80DB3D462BC28311A958B99E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8AFCF4410017CAE33457E070 /* ShelfModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModels.swift; sourceTree = "<group>"; };
+		8ECB3C57BE71A648352C5365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90BB5013F4DF8568B5279A70 /* GunplaVaultPro.storekit */ = {isa = PBXFileReference; path = GunplaVaultPro.storekit; sourceTree = "<group>"; };
+		912A832B9B81BF8F1D782BB5 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		97B8ABF3D2A8B3FB34850868 /* SwiftDataCollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataCollectionRepository.swift; sourceTree = "<group>"; };
+		9DEB016671DBCCAA359C507C /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
+		9E5822220E3DC28C3E1A95DE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		9EBE2F8D74408D11CB1556DA /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		A038253259451160D5C47241 /* BrandMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandMarkView.swift; sourceTree = "<group>"; };
+		A22A558160393EB05B387146 /* ManualKitEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualKitEntryView.swift; sourceTree = "<group>"; };
+		A82C18C93E1C9D8C03B07342 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A8AC5C551764BCD4B60C8879 /* VirtualShelfRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualShelfRecord.swift; sourceTree = "<group>"; };
+		B512C9CF0919E0F8293AE703 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		B833B56687E1D5B21CC24F96 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		BA1C412BCD428DC1F5F98B53 /* BuildModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildModels.swift; sourceTree = "<group>"; };
+		BCA42C9548BEFBC28A1AF92D /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		C9AB24209B65710AA746C46D /* LocalCollectionSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCollectionSyncService.swift; sourceTree = "<group>"; };
+		CB2865C238E531CD9C45F39D /* ProfileNavRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavRow.swift; sourceTree = "<group>"; };
+		CBDFFD1B564E0A1B47E481F3 /* LegalViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalViews.swift; sourceTree = "<group>"; };
+		CF40A8B8575525C2EDFC9D7C /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		CF81241B36D7FFCBB6DD8C2E /* BuildSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildSessionView.swift; sourceTree = "<group>"; };
+		D0B18B42700711164C890D12 /* AuthServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceFactory.swift; sourceTree = "<group>"; };
+		D3D4D21B6689C5C174C1C649 /* SwiftDataShelfRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataShelfRepository.swift; sourceTree = "<group>"; };
+		DAE0F95915CE1F707B467A30 /* SubscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStore.swift; sourceTree = "<group>"; };
+		DF3C75B262CC2C3B7580092B /* BuildPhotoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildPhotoStorage.swift; sourceTree = "<group>"; };
+		E0575E177A1C8070CC566E5E /* AuthFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowView.swift; sourceTree = "<group>"; };
+		E50CC2DB540EEA9D17F27672 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Secrets.plist; sourceTree = "<group>"; };
+		E692B7C80734BDE5225FE77D /* CollectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStore.swift; sourceTree = "<group>"; };
+		E870F2733FE10133A3A3D8CE /* BuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildView.swift; sourceTree = "<group>"; };
+		E8C8BABFCBD9BAA6E5EEA006 /* CollectionSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSyncService.swift; sourceTree = "<group>"; };
+		EA14A357237E68517CE5BEA1 /* SupabaseCollectionSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseCollectionSyncService.swift; sourceTree = "<group>"; };
+		EC63D220FE9AB8B2744F6353 /* AddKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKitView.swift; sourceTree = "<group>"; };
+		F10D45FE7CAD26460802CE3A /* BuildProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildProgressRing.swift; sourceTree = "<group>"; };
+		F93D5409E13A2F26BC13DCB3 /* ShelfStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfStore.swift; sourceTree = "<group>"; };
+		F99FB3064514FDC21CD15F97 /* Secrets.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Secrets.example.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB7CB63620948D18E80A9E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5F4D011E8453E618D98330 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C78D844E3E39E728CD7CEC5 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				7DDC0C39FA1EDB029E19DB93 /* AnalyticsView.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		0CEC7CA8FF34861A1AA4AEF4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6D845BA8B5AB9787C8154811 /* MainTabView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		19953D80DEE0DDFFAF3C7FC5 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				DF3C75B262CC2C3B7580092B /* BuildPhotoStorage.swift */,
+				1E0FBF750B714B7C4D9E2EFD /* ShelfPhotoStorage.swift */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		1D6F22867AEDEDBD1E62E544 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F99FB3064514FDC21CD15F97 /* Secrets.example.plist */,
+				E50CC2DB540EEA9D17F27672 /* Secrets.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CDFD40F6C05BF541A2446A0 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				CBDFFD1B564E0A1B47E481F3 /* LegalViews.swift */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		3B8321FCCF9C9C6E1C518785 = {
+			isa = PBXGroup;
+			children = (
+				C6623E4F8BED84DD7916AD49 /* GunplaVault */,
+				50AF928E067E7FB67D68C9BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F89F75788FAF5BEF2C60720 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4712D28C6F79AFF1C2021DD5 /* AchievementsSection.swift */,
+				CB2865C238E531CD9C45F39D /* ProfileNavRow.swift */,
+				7A0318CEBB2B3D7C5DBC895B /* ProfileView.swift */,
+				79C5533E96FF0C37D8A1B40A /* ShelvesView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4951227114AB3CD0F5908795 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				89E0995D5D12E9159355C721 /* Analytics */,
+				823EFC67F1429A44318EA301 /* Models */,
+				ABF07069AF6E618908D2CF99 /* Protocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4C28C0ED5CFAA1E7548A4820 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				90BB5013F4DF8568B5279A70 /* GunplaVaultPro.storekit */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		50AF928E067E7FB67D68C9BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				067E72E37569080F8EA13ACF /* GunplaVault.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		518D7365D26F6BDC13655C0A /* SeedData */ = {
+			isa = PBXGroup;
+			children = (
+				08DF8D19165806CA3AF666AB /* seed_kits.json */,
+			);
+			path = SeedData;
+			sourceTree = "<group>";
+		};
+		5E87B70191B95265AFFD0A9F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				97B8ABF3D2A8B3FB34850868 /* SwiftDataCollectionRepository.swift */,
+				D3D4D21B6689C5C174C1C649 /* SwiftDataShelfRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		61E75B0D773031D57ABDF65D /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				246895DC8DB5FB95CC175941 /* BuildStore.swift */,
+				E692B7C80734BDE5225FE77D /* CollectionStore.swift */,
+				912A832B9B81BF8F1D782BB5 /* ProfileStore.swift */,
+				F93D5409E13A2F26BC13DCB3 /* ShelfStore.swift */,
+				DAE0F95915CE1F707B467A30 /* SubscriptionStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		63CD5B6D2A8CE0464A4160E1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0C78D844E3E39E728CD7CEC5 /* Analytics */,
+				F369E078050B29E914C5262C /* Auth */,
+				990B8DF5634C68A53D633D91 /* Build */,
+				F64F767DE6DE8E3F24323D0D /* Collection */,
+				DE0635B0F5B047C221005128 /* Explore */,
+				64C307B11848DE3B3726F44F /* Home */,
+				6FE3EA06804851B15AE2E81D /* Launch */,
+				2CDFD40F6C05BF541A2446A0 /* Legal */,
+				0CEC7CA8FF34861A1AA4AEF4 /* Navigation */,
+				92EB06EC1AC7F82793DADDB6 /* Paywall */,
+				3F89F75788FAF5BEF2C60720 /* Profile */,
+				61E75B0D773031D57ABDF65D /* Stores */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		64C307B11848DE3B3726F44F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0762B542B960CAAFBA00D6F4 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C77D3134E279020A4878511 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D6F22867AEDEDBD1E62E544 /* Config */,
+				518D7365D26F6BDC13655C0A /* SeedData */,
+				4C28C0ED5CFAA1E7548A4820 /* StoreKit */,
+				8ECB3C57BE71A648352C5365 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D2B31E076B7C71D1BF55405 /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				2D990AE9478C6AC299A60E12 /* SeedKitCatalog.swift */,
+				414670E1CBDFDE547C5E2020 /* SeedKitLoader.swift */,
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
+		6FE3EA06804851B15AE2E81D /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				67E72067BDFD59298E28C362 /* SplashView.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		823EFC67F1429A44318EA301 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA1C412BCD428DC1F5F98B53 /* BuildModels.swift */,
+				9DEB016671DBCCAA359C507C /* CollectionItem.swift */,
+				A82C18C93E1C9D8C03B07342 /* Models.swift */,
+				8AFCF4410017CAE33457E070 /* ShelfModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89E0995D5D12E9159355C721 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE1E5A1C93A219B747EC86 /* AchievementModels.swift */,
+				37E4CED21B1732BB157569CF /* AnalyticsModels.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		92EB06EC1AC7F82793DADDB6 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				B512C9CF0919E0F8293AE703 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		990B8DF5634C68A53D633D91 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				F10D45FE7CAD26460802CE3A /* BuildProgressRing.swift */,
+				CF81241B36D7FFCBB6DD8C2E /* BuildSessionView.swift */,
+				E870F2733FE10133A3A3D8CE /* BuildView.swift */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		9B2C9608A9D71271E5F9F892 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				2135508080CC94879856D291 /* CollectionItemRecord.swift */,
+				9E5822220E3DC28C3E1A95DE /* PersistenceController.swift */,
+				A8AC5C551764BCD4B60C8879 /* VirtualShelfRecord.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A17FB17B4401316F6000B0EB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0D5BE8A42C9763D7A2203F55 /* AppState.swift */,
+				5253F72EDB4C324B7144D464 /* GunplaVaultApp.swift */,
+				80DB3D462BC28311A958B99E /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ABF07069AF6E618908D2CF99 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2CA9313C0061031D04F3A5E9 /* AuthService.swift */,
+				E8C8BABFCBD9BAA6E5EEA006 /* CollectionSyncService.swift */,
+				1E8A6F040344A4C9830C060A /* Repositories.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B2B358E6848256BAFED7F468 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				A038253259451160D5C47241 /* BrandMarkView.swift */,
+				9EBE2F8D74408D11CB1556DA /* DesignSystem.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		B999796BAA79974856DA4E62 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9B2C9608A9D71271E5F9F892 /* Persistence */,
+				5E87B70191B95265AFFD0A9F /* Repositories */,
+				6D2B31E076B7C71D1BF55405 /* Seed */,
+				F7D4B1489431138807496467 /* Supabase */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BA9068B7E32E7AEBBAECF7B6 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				19953D80DEE0DDFFAF3C7FC5 /* Build */,
+				B2B358E6848256BAFED7F468 /* DesignSystem */,
+				C4B112811309D04BDC88DECE /* Export */,
+				E1EF8F970ABBE8F8585F3B28 /* StoreKit */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C4B112811309D04BDC88DECE /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				0B79DA8648C8B65E4D5F02B5 /* CollectionExporter.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		C6623E4F8BED84DD7916AD49 /* GunplaVault */ = {
+			isa = PBXGroup;
+			children = (
+				A17FB17B4401316F6000B0EB /* App */,
+				B999796BAA79974856DA4E62 /* Data */,
+				4951227114AB3CD0F5908795 /* Domain */,
+				BA9068B7E32E7AEBBAECF7B6 /* Infrastructure */,
+				63CD5B6D2A8CE0464A4160E1 /* Presentation */,
+				6C77D3134E279020A4878511 /* Resources */,
+			);
+			path = GunplaVault;
+			sourceTree = "<group>";
+		};
+		DE0635B0F5B047C221005128 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				11C52DE8775F1F006B7FA393 /* ExploreComingSoonView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		E1EF8F970ABBE8F8585F3B28 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF40A8B8575525C2EDFC9D7C /* SubscriptionManager.swift */,
+				6ADF0BB1091873D4A2E827A2 /* SubscriptionProducts.swift */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		F369E078050B29E914C5262C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E0575E177A1C8070CC566E5E /* AuthFlowView.swift */,
+				2B966FF94D506F19FE29FB10 /* AuthViews.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F64F767DE6DE8E3F24323D0D /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				EC63D220FE9AB8B2744F6353 /* AddKitView.swift */,
+				BCA42C9548BEFBC28A1AF92D /* CollectionView.swift */,
+				13FDFEE3917FD579D7B2B121 /* KitDetailView.swift */,
+				A22A558160393EB05B387146 /* ManualKitEntryView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F7D4B1489431138807496467 /* Supabase */ = {
+			isa = PBXGroup;
+			children = (
+				D0B18B42700711164C890D12 /* AuthServiceFactory.swift */,
+				C9AB24209B65710AA746C46D /* LocalCollectionSyncService.swift */,
+				34CFE53A8D9D229D7C60AD00 /* LocalProfileService.swift */,
+				4FA54A314A7953C9A18028F8 /* SupabaseAuthService.swift */,
+				EA14A357237E68517CE5BEA1 /* SupabaseCollectionSyncService.swift */,
+				B833B56687E1D5B21CC24F96 /* SupabaseManager.swift */,
+				16BD3CA1F24FCD5595BFB84E /* SupabaseProfileService.swift */,
+			);
+			path = Supabase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3367A0930C9B580579EE5BEC /* GunplaVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3896DA995B5660D8CEAAD631 /* Build configuration list for PBXNativeTarget "GunplaVault" */;
+			buildPhases = (
+				159910CA7291A9934F1A51F8 /* Sources */,
+				A6BA54A6136548FBEB5EBE86 /* Resources */,
+				DB7CB63620948D18E80A9E16 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GunplaVault;
+			packageProductDependencies = (
+				8BC6368742D80737FD19E4A6 /* Supabase */,
+			);
+			productName = GunplaVault;
+			productReference = 067E72E37569080F8EA13ACF /* GunplaVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		212E60EE046999A27A89CBBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 3C29E733BA34FD196EFD6FA9 /* Build configuration list for PBXProject "GunplaVault" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3B8321FCCF9C9C6E1C518785;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0C917449FA95D9E74D2344C5 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 50AF928E067E7FB67D68C9BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3367A0930C9B580579EE5BEC /* GunplaVault */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6BA54A6136548FBEB5EBE86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0046D065CF9EC19137B5DE52 /* Assets.xcassets in Resources */,
+				E65809CAAE94854B2465E0E2 /* Secrets.example.plist in Resources */,
+				BC5C4B529C41F282D4339016 /* seed_kits.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		159910CA7291A9934F1A51F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1864BB4CA40BF69F2E582331 /* AchievementModels.swift in Sources */,
+				82113D10C46492A5FB485C70 /* AchievementsSection.swift in Sources */,
+				A50323CF107C7BFF92F6E362 /* AddKitView.swift in Sources */,
+				B67E1F4C8CC45EA1E1103A26 /* AnalyticsModels.swift in Sources */,
+				32D9739097EBF5A27A2CDB3B /* AnalyticsView.swift in Sources */,
+				2CE345AB7D8C293DD182B7BF /* AppState.swift in Sources */,
+				262CF8F44A90A0E1457C9D46 /* AuthFlowView.swift in Sources */,
+				ED5E05BA80297A3120DA7814 /* AuthService.swift in Sources */,
+				1F34701018F5F701F99E9C78 /* AuthServiceFactory.swift in Sources */,
+				DA3142016D4D4F663E6C3C69 /* AuthViews.swift in Sources */,
+				78DEA802DEE2B11B1BCA088E /* BrandMarkView.swift in Sources */,
+				D07A23726BE9A78384DF7616 /* BuildModels.swift in Sources */,
+				C2114B521D9104932B429D58 /* BuildPhotoStorage.swift in Sources */,
+				3E89B79851C5C2580B17ED5F /* BuildProgressRing.swift in Sources */,
+				B80C975A55AE3F10F15CF1FD /* BuildSessionView.swift in Sources */,
+				D1D7ED94E60875B68FAE2298 /* BuildStore.swift in Sources */,
+				2310E966F9C66154F8C8C1FB /* BuildView.swift in Sources */,
+				FC7CCD5C16E5CC36C1620E33 /* CollectionExporter.swift in Sources */,
+				AB365FCC599379541A9085C0 /* CollectionItem.swift in Sources */,
+				659190B0D528C15B2EA4AD3B /* CollectionItemRecord.swift in Sources */,
+				B8C9E8DBF630115F07179F73 /* CollectionStore.swift in Sources */,
+				7F798CD35611477814086E9D /* CollectionSyncService.swift in Sources */,
+				781871DDFDE79BC85C2F8AAB /* CollectionView.swift in Sources */,
+				646CD01CC5834E34A73BECF2 /* DesignSystem.swift in Sources */,
+				34C4051176DA1F69C6429519 /* ExploreComingSoonView.swift in Sources */,
+				80A78EA1A65BD531861944D8 /* GunplaVaultApp.swift in Sources */,
+				512A31600409A45084F51688 /* HomeView.swift in Sources */,
+				BBEC3E7E7D55B54F5C55BD1D /* KitDetailView.swift in Sources */,
+				F8F3C8BEA8C3B36B67C0F9DD /* LegalViews.swift in Sources */,
+				EE89FFBB776D508E9BED223A /* LocalCollectionSyncService.swift in Sources */,
+				06BFE29DE928FA141E19F597 /* LocalProfileService.swift in Sources */,
+				DEEDB71C21D04622C8B29195 /* MainTabView.swift in Sources */,
+				137918C033C239C6C02036A5 /* ManualKitEntryView.swift in Sources */,
+				88CF68AEAB22E074DB470905 /* Models.swift in Sources */,
+				6E0982643978E6DC431CC299 /* PaywallView.swift in Sources */,
+				B1B7ED2598DC98E61793B4D2 /* PersistenceController.swift in Sources */,
+				61470F96867554DD4129F4D0 /* ProfileNavRow.swift in Sources */,
+				F12B4F98C3B9127F34152548 /* ProfileStore.swift in Sources */,
+				6313B20DE02D29FC96FC8C32 /* ProfileView.swift in Sources */,
+				D39EF04854A54958324A4BE7 /* Repositories.swift in Sources */,
+				4674EEE7D2CA1BBCD40386A6 /* RootView.swift in Sources */,
+				65B833AC6F415C01C2C5D5D3 /* SeedKitCatalog.swift in Sources */,
+				569200FD7165837A62375086 /* SeedKitLoader.swift in Sources */,
+				8453B26AE5C7CEFC23A8A142 /* ShelfModels.swift in Sources */,
+				497CDAA7DE2EAB21B48823E2 /* ShelfPhotoStorage.swift in Sources */,
+				054E235A6D1E3A52AA4F908E /* ShelfStore.swift in Sources */,
+				3F756F8EFDF81223B227FFB8 /* ShelvesView.swift in Sources */,
+				8B8A6EA491036C7AD53426E4 /* SplashView.swift in Sources */,
+				43742CEEB4BE25CDAACCC4CA /* SubscriptionManager.swift in Sources */,
+				490EBC76861357852D85EB5C /* SubscriptionProducts.swift in Sources */,
+				EF216679321C6412F446AF7F /* SubscriptionStore.swift in Sources */,
+				4D8E81646C8476FE9F019154 /* SupabaseAuthService.swift in Sources */,
+				4C3C73519888D5B1CC7ACA43 /* SupabaseCollectionSyncService.swift in Sources */,
+				F07F4A4BD8FBEAFF78A32F60 /* SupabaseManager.swift in Sources */,
+				2D6A9B199BBBF33723352171 /* SupabaseProfileService.swift in Sources */,
+				512FB2B37A43401877A9C8AF /* SwiftDataCollectionRepository.swift in Sources */,
+				C29E496C051F2C82CA9F0839 /* SwiftDataShelfRepository.swift in Sources */,
+				2640984DE5535FC23CAC41E2 /* VirtualShelfRecord.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3970E04F650FC57BE6382263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		5BFE6DCAD4C3DA0150197C1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gunpla Vault";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Gunpla Vault uses the camera to scan kit boxes.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Gunpla Vault accesses photos for your build journal and shelves.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_BackgroundColor = LaunchBackground;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_UIColorName = LaunchBackground;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gunplavault.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		809F88CD37C1203CCD24AD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		E49B6C308EDB2F2323CFE8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gunpla Vault";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Gunpla Vault uses the camera to scan kit boxes.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Gunpla Vault accesses photos for your build journal and shelves.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_BackgroundColor = LaunchBackground;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_UIColorName = LaunchBackground;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gunplavault.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3896DA995B5660D8CEAAD631 /* Build configuration list for PBXNativeTarget "GunplaVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BFE6DCAD4C3DA0150197C1F /* Debug */,
+				E49B6C308EDB2F2323CFE8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3C29E733BA34FD196EFD6FA9 /* Build configuration list for PBXProject "GunplaVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809F88CD37C1203CCD24AD43 /* Debug */,
+				3970E04F650FC57BE6382263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C917449FA95D9E74D2344C5 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BC6368742D80737FD19E4A6 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C917449FA95D9E74D2344C5 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 212E60EE046999A27A89CBBB /* Project object */;
+}

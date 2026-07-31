@@ -1,0 +1,31 @@
+# Xcode
+**/xcuserdata/
+*.xcodeproj/xcuserdata/
+DerivedData/
+build/
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Secrets — never commit
+GunplaVault/Resources/Config/Secrets.xcconfig
+GunplaVault/Resources/Config/Secrets.plist
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Cursor / IDE
+.cursor/
