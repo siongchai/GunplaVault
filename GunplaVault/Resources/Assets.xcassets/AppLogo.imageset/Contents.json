@@ -1,7 +1,18 @@
 {
   "images": [
     {
-      "filename": "AppLogo.png",
+      "filename": "AppLogo-light.png",
+      "idiom": "universal",
+      "scale": "1x"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
+      "filename": "AppLogo-dark.png",
       "idiom": "universal",
       "scale": "1x"
     }

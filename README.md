@@ -68,6 +68,7 @@ open GunplaVault.xcodeproj
 3. Profile → verify version, Privacy, Terms
 4. Home screen icon should show brand helmet
 5. Collection grid should show kit box art for catalog entries
+6. Refresh brand logos from design sheet: `python3 Scripts/generate_splash_assets.py`
 
 ## Seed database box art
 

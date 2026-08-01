@@ -10,13 +10,7 @@ struct RootView: View {
 
     var body: some View {
         Group {
-            if showSplash {
-                SplashView(isAppReady: !appState.isLoading) {
-                    withAnimation(.easeOut(duration: 0.25)) {
-                        splashFinished = true
-                    }
-                }
-            } else if appState.isAuthenticated {
+            if appState.isAuthenticated {
                 MainTabView()
                     .environmentObject(appState.profileStore)
                     .environmentObject(appState.collectionStore)
@@ -30,6 +24,17 @@ struct RootView: View {
         .task {
             await appState.bootstrap()
         }
+        .overlay {
+            if showSplash {
+                SplashView {
+                    withAnimation(.easeOut(duration: 0.25)) {
+                        splashFinished = true
+                    }
+                }
+                .transition(.opacity)
+            }
+        }
+        .animation(.easeOut(duration: 0.25), value: splashFinished)
     }
 }
 

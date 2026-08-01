@@ -11,10 +11,12 @@ struct BrandMarkView: View {
     var stage: BrandMarkStage = .complete
     var size: CGFloat = 120
     var assemblyProgress: CGFloat = 1
+    var showHexagon: Bool = true
+    var accentOverride: Color?
 
     @Environment(\.colorScheme) private var colorScheme
 
-    private var accent: Color { GVColors.accent }
+    private var accent: Color { accentOverride ?? GVColors.accent }
     private var helmetFill: Color {
         colorScheme == .dark ? Color(red: 0.18, green: 0.19, blue: 0.24) : .white
     }
@@ -31,12 +33,16 @@ struct BrandMarkView: View {
 
     var body: some View {
         ZStack {
-            HexagonShape()
-                .stroke(accent, lineWidth: size * 0.035)
-                .frame(width: size, height: size)
-                .opacity(stage == .wireframe ? 0.55 : 1)
+            if showHexagon {
+                HexagonShape()
+                    .stroke(accent, lineWidth: size * 0.035)
+                    .frame(width: size, height: size)
+                    .opacity(stage == .wireframe ? 0.55 : 1)
+            }
 
             if stage == .assembling {
+                helmetCore
+                    .opacity(0.3)
                 assemblingParts
             } else {
                 helmetCore
@@ -64,17 +70,23 @@ struct BrandMarkView: View {
     private var helmetCore: some View {
         ZStack {
             HelmetBodyShape()
-                .fill(helmetFill)
+                .fill(stage == .wireframe ? .clear : helmetFill)
                 .overlay {
                     HelmetBodyShape()
                         .stroke(
-                            stage == .wireframe ? accent.opacity(0.7) : helmetStroke,
-                            lineWidth: stage == .wireframe ? 1.5 : 1
+                            stage == .wireframe ? accent.opacity(0.85) : helmetStroke,
+                            lineWidth: stage == .wireframe ? 1.4 : 1
                         )
                 }
 
             HelmetVisorShape()
-                .fill(colorScheme == .dark ? Color(white: 0.12) : Color(red: 0.12, green: 0.16, blue: 0.28))
+                .fill(stage == .wireframe ? .clear : (colorScheme == .dark ? Color(white: 0.12) : Color(red: 0.12, green: 0.16, blue: 0.28)))
+                .overlay {
+                    if stage == .wireframe {
+                        HelmetVisorShape()
+                            .stroke(accent.opacity(0.75), lineWidth: 1.2)
+                    }
+                }
                 .frame(width: size * 0.52, height: size * 0.22)
                 .offset(y: size * 0.02)
 
@@ -85,7 +97,13 @@ struct BrandMarkView: View {
             .offset(y: size * 0.02)
 
             VFinShape()
-                .fill(accent.opacity(stage == .wireframe ? 0.5 : 0.95))
+                .fill(stage == .wireframe ? .clear : accent.opacity(0.95))
+                .overlay {
+                    if stage == .wireframe {
+                        VFinShape()
+                            .stroke(accent.opacity(0.8), lineWidth: 1.2)
+                    }
+                }
                 .frame(width: size * 0.22, height: size * 0.18)
                 .offset(y: -size * 0.28)
         }
